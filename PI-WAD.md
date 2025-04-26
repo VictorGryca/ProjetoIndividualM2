@@ -1,10 +1,9 @@
 # Web Application Document - Projeto Individual - Módulo 2 - Inteli
 
-**_wdOs trechos em itálico servem apenas como guia para o preenchimento da seção. Por esse motivo, não devem fazer parte da documentação final._**
-dd
-## Nome do Projeto
 
-#### Autor do projeto
+## ClickVisit 📅
+
+#### Victor Grycajuk
 
 ## Sumário
 
@@ -18,8 +17,31 @@ dd
 
 ## <a name="c1"></a>1. Introdução (Semana 01)
 
-*Preencha com até 300 palavras – sem necessidade de fonte.*
-*Descreva brevemente o sistema que você irá desenvolver.*
+### Descrição do Projeto
+
+A ClickVisit é uma aplicação web para o agendamento de visitas a imóveis, destinada a corretores autônomos e, principalmente, a imobiliárias.
+
+O sistema permite que os clientes visualizem a disponibilidade combinada entre duas agendas: a do corretor e a do imóvel. Com essas informações, o cliente consegue agendar, de forma simples e rápida, o melhor horário disponível para a sua própria agenda.
+
+### Tipos de Login
+
+- **Imobiliária (ou corretor autônomo):**  
+  Responsável pelo cadastro de imóveis e pela gestão de suas respectivas agendas. Pode inserir bloqueios nos horários (como reformas, vistorias, entre outros) e definir quais corretores estão vinculados a cada imóvel.
+
+- **Corretor de imobiliária:**  
+  Gerencia sua agenda pessoal e os links exclusivos enviados a clientes interessados em determinados imóveis.
+
+### Processo de Agendamento
+
+O agendamento é totalmente feito pelo cliente, através de um link individual gerado pelo corretor.  
+Ao acessá-lo, o cliente visualiza as agendas do imóvel e do corretor e escolhe o horário mais conveniente.
+
+Uma vez confirmada, a reserva é automaticamente registrada tanto na agenda do imóvel quanto na do corretor, bloqueando aquele horário para futuras marcações.
+
+### Objetivo
+
+Proporcionar uma experiência de agendamento prática, visual e organizada para todas as partes envolvidas.
+
 
 ---
 
