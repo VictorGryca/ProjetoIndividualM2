@@ -53,7 +53,27 @@ Proporcionar uma experiência de agendamento prática, visual e organizada para 
 
 ### 2.2. User Stories (Semana 01)
 
-*Posicione aqui a lista de User Stories levantadas para o projeto. Siga o template de User Stories e utilize a referência USXX para numeração (US01, US02, US03, ...). Indique todas as User Stories mapeadas, mesmo aquelas que não forem implementadas ao longo do projeto. Não se esqueça de explicar o INVEST de 1 User Storie prioritária.*
+
+US01: Como gerente da imobiliária, quero visualizar e controlar as agendas de todos os imóveis e corretores,
+para garantir que as visitas sejam organizadas sem conflitos de horários.
+
+I - O gerente pode visualizar e controlar agendas sem depender de outras funcionalidades, como envio de links ou cadastro de novos clientes.
+
+N - O nível de detalhe do controle (ex: apenas visualizar vs. editar horários) pode ser ajustado conforme a necessidade do projeto. 
+
+V - Esse sistema traz valor direto para a organização e eficiência da imobiliária. Organiza agendas aumentando a produtividade dos corretores.
+
+E - É possível estimar o esforço de desenvolvimento com base em requisitos simples (visualizar, bloquear horários, editar agendas).
+
+S - É uma história que pode ser dividida e implementada de forma objetiva (não é como um épico). Engloba apenas alguns agendamentos e não todo o fluxo dos clientes (peospecção, mostragem de imóvel...).
+
+T - É fácil criar testes para verificar se o gerente consegue visualizar todas as agendas e identificar conflitos de horários. Pode-se testar se o gerente consegue visualizar todas as agendas ou se, por exemplo, visitas em horários conflitantes não são possíveis de serem marcadas.
+
+US02: Como corretor de imóveis, quero cadastrar minha agenda de disponibilidade,
+para facilitar o agendamento de visitas pelos clientes sem precisar gerenciar manualmente.
+
+US03: Como cliente interessado em um imóvel, quero acessar um link e agendar uma visita em poucos cliques,
+para escolher o melhor horário disponível sem depender de intermediários.
 
 ---
 
