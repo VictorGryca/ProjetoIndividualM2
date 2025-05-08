@@ -49,7 +49,7 @@ Proporcionar uma experiência de agendamento prática, visual e organizada para 
 
 ### 2.1. Personas (Semana 01)
 
-![Persona](assets/PI-WAD/persona2.png)
+![Persona](assetsWAD/PI-WAD/persona2.png)
 
 ### 2.2. User Stories (Semana 01)
 
