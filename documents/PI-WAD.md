@@ -194,22 +194,31 @@ ALTER TABLE
 
 ### 3.3. Wireframes (Semana 03)
 
-#### Tela de consulta de imóveis - Imobiliária
+#### Consulta de imóveis para Imobiliária
+- Representa as funcionalidades descritas no User Story 01.
 
 <div align="center">
-<sub align="center">Figura 1 - Análise SWOT  </sub>
+<sub align="center">Figura 3 - Tela de consulta de imóveis para Imobiliária  </sub>
 </div>
 <div align="center">
-<img src="assets/WAD/Analise Swot.jpg" alt="Imagem da Analise SWOT" border="0" width=100% height=100%>
+<img src="assetsWAD/wireFrame_consultaDeImoveis.png" alt="wireFrame_consultaDeImoveis" border="0" width=100% height=100%>
 </div>
 <div align="center">
-<sup>Fonte: Material produzido pela equipe, 2025.</sup>
+<sup>Fonte: Victor Grycajuk, 2025.</sup>
 </div>
 
-![wireFrame_consultaDeImoveis](assetsWAD/wireFrame_consultaDeImoveis.png)
+#### Seleção de horários para clientes.
+- Representa as funcionalidades descritas no User Story 03.
 
-#### Tela de seleção de horários - Cliente
-![wireFrame_selecaoDeHorario](assetsWAD/wireFrame_selecaoDeHorario.png)
+<div align="center">
+<sub align="center">Figura 4 - Tela de seleção de horários para Cliente  </sub>
+</div>
+<div align="center">
+<img src="assetsWAD/wireFrame_selecaoDeHorario.png" alt="wireFrame_selecaoDeHorario" border="0" width=100% height=100%>
+</div>
+<div align="center">
+<sup>Fonte: Victor Grycajuk, 2025.</sup>
+</div>
 
 
 
