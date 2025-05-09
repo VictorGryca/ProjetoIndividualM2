@@ -4,14 +4,13 @@ Aplicação web para **agendamento de visitas a imóveis**. Corretores (autônom
 
 ## Sumário
 
-1. [](#c1)  
-2. [](#c2)  
-3. [](#c3)  
+1. [Descrição do sistema](#c1)  
+2. [Estrtura de pastas e arquivos](#c2)  
+3. [Como executar o projeto localmente](#c3)  
 4. [](#c4)  
 5. [](#c5)  
 
-
-## 1. Descrição do sistema
+## <a name="c1"></a>1. Descrição do sistema
 
 | Papel           | Permissões principais                                                              |
 | --------------- | ---------------------------------------------------------------------------------- |
@@ -40,7 +39,7 @@ Fluxo resumido:
 
 
 
-## 2. Estrutura de pastas e arquivos
+## <a name="c2"></a>2. Estrutura de pastas e arquivos
 
 ```text
 .
@@ -74,7 +73,7 @@ Fluxo resumido:
 │   └── runSQLScript.js  # utilitário para popular o BD
 ├── services/            # Serviços auxiliares do sistema
 │   └── userService.js
-├── tests/                 # Arquivos de testes unitários
+├── tests/               # Arquivos de testes unitários
 │   ├── userController.test.js
 │   ├── userModel.test.js
 │   ├── userRoutes.test.js
@@ -84,12 +83,12 @@ Fluxo resumido:
 ├── app.js               # app Express (rotas básicas)
 ├── server.js            # ponto de entrada — sobe o servidor
 ├── .env                 # variáveis de ambiente (DB, PORT…)
-├── package-lock.json      # Gerenciador de dependências do Node.js
+├── package-lock.json    # Gerenciador de dependências do Node.js
 ├── package.json         # dependências e scripts npm
-└── readme.md              # Documentação do projeto (Markdown)
+└── readme.md            # Documentação do projeto (Markdown)
 ```
 
-## 3. Como executar o projeto localmente
+## <a name="c1"></a>3. Como executar o projeto localmente
 
 1. **Clone o repositório**
 
