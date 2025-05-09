@@ -195,7 +195,8 @@ ALTER TABLE
 ### 3.3. Wireframes (Semana 03)
 
 #### Consulta de imóveis para Imobiliária
-- Representa as funcionalidades descritas no User Story 01.
+Representa as funcionalidades descritas no User Story 01.
+- US01: Como gerente da imobiliária, quero visualizar e controlar as agendas de todos os imóveis e corretores, para garantir que as visitas sejam organizadas sem conflitos de horários.
 
 <div align="center">
 <sub align="center">Figura 3 - Tela de consulta de imóveis para Imobiliária  </sub>
@@ -208,7 +209,8 @@ ALTER TABLE
 </div>
 
 #### Seleção de horários para clientes.
-- Representa as funcionalidades descritas no User Story 03.
+Representa as funcionalidades descritas no User Story 03.
+- US03: Como cliente interessado em um imóvel, quero acessar um link e agendar uma visita em poucos cliques, para escolher o melhor horário disponível sem depender de intermediários.
 
 <div align="center">
 <sub align="center">Figura 4 - Tela de seleção de horários para Cliente  </sub>
