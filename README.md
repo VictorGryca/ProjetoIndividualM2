@@ -88,7 +88,7 @@ Fluxo resumido:
 └── readme.md            # Documentação do projeto (Markdown)
 ```
 
-## <a name="c1"></a>3. Como executar o projeto localmente
+## <a name="c3"></a>3. Como executar o projeto localmente
 
 1. **Clone o repositório**
 
