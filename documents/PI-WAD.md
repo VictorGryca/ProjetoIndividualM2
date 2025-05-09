@@ -53,8 +53,7 @@ Proporcionar uma experiência de agendamento prática, visual e organizada para 
 ### 2.2. User Stories (Semana 01)
 
 
-US01: Como gerente da imobiliária, quero visualizar e controlar as agendas de todos os imóveis e corretores,
-para garantir que as visitas sejam organizadas sem conflitos de horários.
+#### US01: Como gerente da imobiliária, quero visualizar e controlar as agendas de todos os imóveis e corretores, para garantir que as visitas sejam organizadas sem conflitos de horários.
 
 I - O gerente pode visualizar e controlar agendas sem depender de outras funcionalidades, como envio de links ou cadastro de novos clientes.
 
@@ -68,11 +67,9 @@ S - É uma história que pode ser dividida e implementada de forma objetiva (nã
 
 T - É fácil criar testes para verificar se o gerente consegue visualizar todas as agendas e identificar conflitos de horários. Pode-se testar se o gerente consegue visualizar todas as agendas ou se, por exemplo, visitas em horários conflitantes não são possíveis de serem marcadas.
 
-US02: Como corretor de imóveis, quero cadastrar minha agenda de disponibilidade,
-para facilitar o agendamento de visitas pelos clientes sem precisar gerenciar manualmente.
+#### US02: Como corretor de imóveis, quero cadastrar minha agenda de disponibilidade, para facilitar o agendamento de visitas pelos clientes sem precisar gerenciar manualmente.
 
-US03: Como cliente interessado em um imóvel, quero acessar um link e agendar uma visita em poucos cliques,
-para escolher o melhor horário disponível sem depender de intermediários.
+#### US03: Como cliente interessado em um imóvel, quero acessar um link e agendar uma visita em poucos cliques, para escolher o melhor horário disponível sem depender de intermediários.
 
 ---
 
@@ -197,7 +194,24 @@ ALTER TABLE
 
 ### 3.3. Wireframes (Semana 03)
 
-*Posicione aqui as imagens do wireframe construído para sua solução e, opcionalmente, o link para acesso (mantenha o link sempre público para visualização).*
+#### Tela de consulta de imóveis - Imobiliária
+
+<div align="center">
+<sub align="center">Figura 1 - Análise SWOT  </sub>
+</div>
+<div align="center">
+<img src="assets/WAD/Analise Swot.jpg" alt="Imagem da Analise SWOT" border="0" width=100% height=100%>
+</div>
+<div align="center">
+<sup>Fonte: Material produzido pela equipe, 2025.</sup>
+</div>
+
+![wireFrame_consultaDeImoveis](assetsWAD/wireFrame_consultaDeImoveis.png)
+
+#### Tela de seleção de horários - Cliente
+![wireFrame_selecaoDeHorario](assetsWAD/wireFrame_selecaoDeHorario.png)
+
+
 
 ### 3.4. Guia de estilos (Semana 05)
 
