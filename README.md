@@ -11,15 +11,36 @@ Aplicação web para **agendamento de visitas a imóveis**. Corretores (autônom
 5. [](#c5)  
 
 
-Tecnologias‑chave:
+## 1. Descrição do sistema
 
-* **Node.js + Express** — back‑end em padrão MVC
-* **PostgreSQL (Supabase)** — banco relacional
-* **EJS** — views server‑side
+| Papel           | Permissões principais                                                              |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **Imobiliária** | Cadastro de imóveis, vinculação de corretores, bloqueio de horários (reforma etc.) |
+| **Corretor**    | Mantém agenda pessoal, gera link exclusivo para o cliente                          |
+| **Cliente**     | Acessa link, compara agendas, agenda visita                                        |
+
+Fluxo resumido:
+
+1. Corretor envia link do imóvel.
+2. Cliente escolhe horário livre.
+3. Sistema grava em `events` e `visits`.
+4. Horário fica bloqueado para novos agendamentos.
 
 ---
 
-## 1. Estrutura de pastas e arquivos
+**Padrão MVC:** Estrutura organizada em Model, View e Controller
+
+**PostgreSQL:** Banco de dados relacional utilizado para persistência dos dados.
+
+**UUID:** Utilização de UUID como chave primária na tabela `users`.
+
+**Scripts com `nodemon`:** Utilização do `nodemon` para reiniciar automaticamente o servidor após alterações no código.
+
+**Testes:** Inclui estrutura básica para testes automatizados.
+
+
+
+## 2. Estrutura de pastas e arquivos
 
 ```text
 .
@@ -27,52 +48,48 @@ Tecnologias‑chave:
 ├── config/
 │   └── db.js            # conexão PostgreSQL
 ├── controllers/         # lógica de negócio (por entidade)
+│   ├── aboutController.js
+│   ├── alunoController.js
+│   ├── contactController.js
+│   ├── homeController.js
+│   └── userController.js
 ├── documents/
+│   ├── assetsWAD/
+│   |   └── ...
 │   └── PI-WAD.md        # documentação acadêmica
 ├── models/              # mapeamento das tabelas (DAO)
+│   ├── aluno.js
+│   └── UserModel.js
+├── node_modules/ 
+│   └── ...
 ├── public/              # CSS, JS e imgs servidos pelo Express
+│   └── ...
 ├── routes/
 │   ├── alunos.js        # exemplo de rota
-│   └── frontRoutes.js   # rotas de views
+│   ├── frontRoutes.js   # rotas de views
+│   └── userRoutes.js
 ├── scripts/
 │   ├── ClickVisit.sql   # schema completo do banco
+│   ├── init.sql
 │   └── runSQLScript.js  # utilitário para popular o BD
-├── tests/               # testes unitários e de integração
+├── services/            # Serviços auxiliares do sistema
+│   └── userService.js
+├── tests/                 # Arquivos de testes unitários
+│   ├── userController.test.js
+│   ├── userModel.test.js
+│   ├── userRoutes.test.js
+│   └── userService.test.js
+├── views/  
+├── styles/              # Arquivos CSS públicos
 ├── app.js               # app Express (rotas básicas)
 ├── server.js            # ponto de entrada — sobe o servidor
 ├── .env                 # variáveis de ambiente (DB, PORT…)
-└── package.json         # dependências e scripts npm
-```
-```
-meu-projeto/
-│
-├── config/                # Arquivos de configuração (ex: conexão com banco)
-│   └── database.js
-├── controllers/           # Lógica de controle das requisições
-│   └── HomeController.js
-├── models/                # Definição de modelos de dados (estrutura do banco)
-│   └── User.js
-├── routes/                # Definição das rotas do sistema
-│   └── index.js
-├── services/              # Serviços auxiliares do sistema
-│   └── userService.js
-├── assets/                # Arquivos públicos como imagens e fontes
-├── scripts/               # Arquivos de JavaScript públicos
-├── styles/                # Arquivos CSS públicos
-├── tests/                 # Arquivos de testes unitários
-│   └── example.test.js
-├── .gitignore             # Arquivo para ignorar arquivos no Git
-├── .env.example           # Arquivo de exemplo para variáveis de ambiente
-├── jest.config.js         # Arquivo de configuração do Jest
 ├── package-lock.json      # Gerenciador de dependências do Node.js
-├── package.json           # Gerenciador de dependências do Node.js
-├── readme.md              # Documentação do projeto (Markdown)
-├── server.js              # Arquivo principal que inicializa o servidor
-└── rest.http              # Teste de endpoints (opcional)
-
+├── package.json         # dependências e scripts npm
+└── readme.md              # Documentação do projeto (Markdown)
 ```
 
-## 2. Como executar o projeto localmente
+## 3. Como executar o projeto localmente
 
 1. **Clone o repositório**
 
@@ -113,22 +130,6 @@ meu-projeto/
    ```
 
    A aplicação estará em **[http://localhost:3000](http://localhost:3000)**.
-
-
-## 3. Visão geral do sistema
-
-| Papel           | Permissões principais                                                              |
-| --------------- | ---------------------------------------------------------------------------------- |
-| **Imobiliária** | Cadastro de imóveis, vinculação de corretores, bloqueio de horários (reforma etc.) |
-| **Corretor**    | Mantém agenda pessoal, gera link exclusivo para o cliente                          |
-| **Cliente**     | Acessa link, compara agendas, agenda visita                                        |
-
-Fluxo resumido:
-
-1. Corretor envia link do imóvel.
-2. Cliente escolhe horário livre.
-3. Sistema grava em `events` e `visits`.
-4. Horário fica bloqueado para novos agendamentos.
 
 ---
 
